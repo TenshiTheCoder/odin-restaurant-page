@@ -1,8 +1,5 @@
-import { createAbout, createHome, createMenu} from "./barrel.js";
-const contentContainer = document.querySelector("#content");
+import { createHome } from "./barrel.js";
 
 export function initialLoad() {
   createHome();
-
-
 };

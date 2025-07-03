@@ -19,7 +19,7 @@ export function createHome() {
 
   const phoneContainer = document.createElement("div");
 
-  const phoneLabel = document.createElement("p");
+  const phoneLabel = document.createElement("strong");
   phoneLabel.textContent = "Phone Number: ";
 
   const phoneNumber = document.createElement("p");
@@ -30,7 +30,7 @@ export function createHome() {
   // Container for the email container info
   const emailContainer = document.createElement("div");
 
-  const emailLabel = document.createElement("h2");
+  const emailLabel = document.createElement("strong");
   emailLabel.textContent = "Email: ";
 
   const emailAddress = document.createElement("p");
@@ -41,7 +41,7 @@ export function createHome() {
   // Address Info
   const addressContainer = document.createElement("div");
 
-  const addressLabel = document.createElement("p");
+  const addressLabel = document.createElement("strong");
   addressLabel.textContent = "Visit us in store at: ";
 
   const addressInfo = document.createElement("p");
