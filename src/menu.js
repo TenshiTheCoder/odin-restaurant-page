@@ -2,12 +2,15 @@ const contentContainer = document.querySelector("#content");
 
 export function createMenu() {
   const menuHeading = document.createElement("h1");
-  menuHeading.textContent = "Menu"
+  menuHeading.classList.add("menu-heading");
+  menuHeading.textContent = "Menu";
 
   // Beginning of the 
   const entreeContainer = document.createElement("div");
+  entreeContainer.classList.add("entree-container");
 
   const entreeHeading = document.createElement("h2");
+  entreeHeading.classList.add("entree-heading");
   entreeHeading.textContent = "Entrees";
 
   // Container for the fettuccine 
@@ -39,6 +42,7 @@ export function createMenu() {
 
   // Beginning of the beverages section
   const beveragesContainer = document.createElement("div");
+  beveragesContainer.classList.add("beverages-container");
 
   const beveragesHeading = document.createElement("h2");
   beveragesHeading.textContent = "Beverages";
@@ -69,16 +73,19 @@ export function createMenu() {
   teaArticle.append(teaHeading, teaDescription);
   teaContainer.appendChild(teaArticle);
 
-  beveragesContainer.append(strawberryContainer, teaContainer);
+  beveragesContainer.append(beveragesHeading, strawberryContainer, teaContainer);
 
   // Container for desserts
   const dessertContainer = document.createElement("div");
-  
+  dessertContainer.classList.add("dessert-container");
+
   const dessertHeading = document.createElement("h2");
+  dessertHeading.classList.add("dessert-heading");
   dessertHeading.textContent = "Dessert";
 
   // Container for the lava cake
   const lavaCakeContainer = document.createElement("section");
+  const lavaCakeArticle = document.createElement("article");
 
   const lavaCakeHeading = document.createElement("h3");
   lavaCakeHeading.textContent = "Chocolate Lava Cake";
@@ -86,7 +93,8 @@ export function createMenu() {
   const lavaCakeDescription = document.createElement("p");
   lavaCakeDescription.textContent = "A soft and spongy chocolate cake with warm and delectable melted chocolate inside";
 
-  lavaCakeContainer.append(lavaCakeHeading, lavaCakeDescription);
+  lavaCakeArticle.append(lavaCakeHeading, lavaCakeDescription);
+  lavaCakeContainer.appendChild(lavaCakeArticle);
 
   // Container for the Cupcakes 
   const cupcakeContainer = document.createElement("section");
@@ -100,6 +108,7 @@ export function createMenu() {
 
   cupcakeArticle.append(cupcakeHeading, cupcakeDescription);
   cupcakeContainer.appendChild(cupcakeArticle);
+  dessertContainer.append(dessertHeading, lavaCakeContainer, cupcakeContainer);
 
   // Appending the Heading and 3 sections of the menu to the main parent container
   contentContainer.append(menuHeading, entreeContainer, beveragesContainer, dessertContainer);

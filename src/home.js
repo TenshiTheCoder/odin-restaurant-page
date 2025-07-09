@@ -1,4 +1,5 @@
 const contentContainer = document.querySelector("#content");
+import "./home.css";
 
 export function createHome() {
   const homeHeadingContainer = document.createElement("div");
@@ -6,7 +7,7 @@ export function createHome() {
 
   const homeHeading = document.createElement("h1");
   homeHeading.textContent = "Bell Cafe";
-  homeHeading.classList.add("home-heading-main")
+  homeHeading.classList.add("home-heading-main");
 
   const homeSubHeading = document.createElement("h2");
   homeSubHeading.textContent = "A beautiful cafe located in New York that serves the most divine pasta you'll ever have";
@@ -23,6 +24,7 @@ export function createHome() {
   contactHeading.classList.add("contact-heading");
 
   const phoneContainer = document.createElement("div");
+  phoneContainer.classList.add("phone-container");
 
   const phoneLabel = document.createElement("strong");
   phoneLabel.textContent = "Phone Number: ";
@@ -36,7 +38,7 @@ export function createHome() {
 
   // Container for the email container info
   const emailContainer = document.createElement("div");
-  emailContainer.classList.add("email-container")
+  emailContainer.classList.add("email-container");
 
   const emailLabel = document.createElement("strong");
   emailLabel.textContent = "Email: ";
@@ -62,8 +64,43 @@ export function createHome() {
 
   addressContainer.append(addressLabel, addressInfo);
 
-  // Appending the contact info which is then appended with the home heading to the main content div
+  // Appending the different sections to the parent contact container
   contactContainer.append(phoneContainer, emailContainer, addressContainer);
 
-  contentContainer.append(homeHeadingContainer, contactContainer);
+  // Store hours info
+  const hoursContainer = document.createElement("section");
+  hoursContainer.classList.add("hours-container");
+
+  const hoursArticle = document.createElement("article");
+  hoursArticle.classList.add("hours-article");
+
+  const hoursLabel = document.createElement("strong");
+  hoursLabel.textContent = "Hours: ";
+
+  const monday = document.createElement("p");
+  monday.textContent = "Monday: 9am - 8pm";
+
+  const tuesday = document.createElement("p");
+  tuesday.textContent = "Tuesday: 9am - 8pm";
+
+  const wednesday = document.createElement("p");
+  wednesday.textContent = "Wednesday: 9am - 8pm";
+
+  const thursday = document.createElement("p");
+  thursday.textContent = "Thursday: 9am - 8pm";
+
+  const friday = document.createElement("p");
+  friday.textContent = "Friday: 9am - 9pm";
+
+  const saturday = document.createElement("p");
+  saturday.textContent = "Saturday: 9am - 9pm";
+
+  const sunday = document.createElement("p");
+  sunday.textContent = "Sunday: 9am - 3pm";
+
+  hoursArticle.append(hoursLabel, monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+  hoursContainer.appendChild(hoursArticle);
+
+  // Appending the finished containers to the #content parent div
+  contentContainer.append(homeHeadingContainer, contactContainer, hoursContainer);
 }; 
