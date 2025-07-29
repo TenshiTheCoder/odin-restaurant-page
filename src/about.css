@@ -10,3 +10,28 @@
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/* .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: auto;
+} */
+
+/* .phone-container { 
+  align-items: center;
+  width: auto;
+} */
+
+/* Styling for the contact information and respective Divs */
+
+/* .phone-container,
+.email-container,
+.address-container {
+  background-color: #5A9BD5;
+  border: 5px solid #d6c6f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+} */
