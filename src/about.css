@@ -1,37 +1,74 @@
-.about-description {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: black;
+/* Font face rules */
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/static/OpenSans-Bold.ttf") format("truetype");
 };
 
-.about-heading {
-  color: black;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Black.ttf") format("truetype");
+};
+
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster_Two/LobsterTwo-BoldItalic.ttf") format("truetype");
+  font-display: swap;
 }
 
-/* .contact-container {
+/* Styling for the main heading and descriptor text */
+.about-heading {
+  font-family: "Lobster";
+  text-align: center;
+  color: #1E3A8A;
+}
+
+.about-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 12px;
+}
+
+/* Styling for the contact container */
+.contact-container {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: auto;
-  width: auto;
-} */
+  height: fit-content;
+  margin-top: 24px;
+}
 
-/* .phone-container { 
-  align-items: center;
-  width: auto;
-} */
+/* Styling for the contact information */ 
+.email-container, .address-container, .phone-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 12px;
+}
 
-/* Styling for the contact information and respective Divs */
+.email-label, .address-label, .phone-label {
+  color: #1E3A8A;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+}
 
-/* .phone-container,
-.email-container,
-.address-container {
-  background-color: #5A9BD5;
-  border: 5px solid #d6c6f2;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-} */
+.email-info, .address-info, .phone-info {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+
+/* Styling for the address container */
+.address-container { 
+  background-color: white;
+}
+
+/* Styling for the phone container */
+.phone-container {
+  background-color: white;
+}
+
+
+
+

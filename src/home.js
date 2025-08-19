@@ -45,12 +45,7 @@ export function createHome() {
   featuredContainer.append(dishImg, dishDescription,);
 
   // Container for the phone contact info
-  const contactContainer = document.createElement("div");
-  contactContainer.classList.add("contact-container");
-
-  const contactHeading = document.createElement("h1");
-  contactHeading.textContent = "Contact Us";
-  contactHeading.classList.add("contact-heading");
+  
 
   // Store hours info
   const hoursContainer = document.createElement("section");

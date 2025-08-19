@@ -3,19 +3,30 @@ const contentContainer = document.querySelector("#content");
 import "./about.css";
 
 export function createAbout() {
-  const aboutDescription = document.createElement("p");
-  aboutDescription.classList.add("about-description");
-  aboutDescription.textContent =
-    "Welcome to Bell Cafe! A small restaurant filled with delicious appetizers like mozzarella sticks. Entrees including all of your favorite pastas, and delicious lava cakes for dessert. Located in Paterson, New Jersey, Bell Cafe aims to deliver a divine experience and leave you craving more!";
+
+  // Heading and description for the about page
+  const aboutContainer = document.createElement("div");
+  aboutContainer.classList.add("about-container");
 
   const aboutHeading = document.createElement("h1");
   aboutHeading.classList.add("about-heading");
   aboutHeading.textContent = "What is Bell Cafe?";
 
-    contentContainer.appendChild(aboutHeading);
-    contentContainer.appendChild(aboutDescription);
+  const aboutDescription = document.createElement("p");
+  aboutDescription.classList.add("about-description");
+  aboutDescription.textContent =
+    "Welcome to Bell Cafe! A small restaurant filled with delicious appetizers like mozzarella sticks. Entrees including all of your favorite pastas, and delicious lava cakes for dessert. Located in the heart of New York City, Bell Cafe aims to deliver a divine experience and leave you craving more!";
 
-     // Container for the email container info
+  aboutContainer.append(aboutHeading, aboutDescription);
+  // Container for the contact info 
+  const contactContainer = document.createElement("div");
+  contactContainer.classList.add("contact-container");
+
+  const contactHeading = document.createElement("h1");
+  contactHeading.textContent = "Contact Us";
+  contactHeading.classList.add("contact-heading");
+
+  // Container for the email container info
   const emailContainer = document.createElement("div");
   emailContainer.classList.add("email-container");
 
@@ -58,6 +69,8 @@ export function createAbout() {
   phoneContainer.append(phoneLabel, phoneNumber);
 
   // contactContainer.append(phoneContainer, emailContainer, addressContainer);
+  contactContainer.append(emailContainer, addressContainer, phoneContainer);
+  contentContainer.append(aboutContainer, contactContainer);
 };
 
 

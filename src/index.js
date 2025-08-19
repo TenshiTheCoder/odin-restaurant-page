@@ -10,16 +10,19 @@ initialLoad();
 
 function buttonListeners() {
   homeButton.addEventListener("click", () => {
+    localStorage.setItem("currentPage", "home");
     contentContainer.innerHTML = "";
     createHome();
   })
 
   aboutButton.addEventListener("click", () => {
+    localStorage.setItem("currentPage", "about");
     contentContainer.innerHTML = "";
     createAbout();
   })
 
   menuButton.addEventListener("click", () => {
+    localStorage.setItem("currentPage", "menu");
     contentContainer.innerHTML = "";
     createMenu();
   })

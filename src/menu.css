@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/static/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster_Two/LobsterTwo-BoldItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#content  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  line-height: 2rem;
+}
+
+.menu-container {
+  margin-top: 20px;
+}
+
+.menu-heading {
+  text-align: center;
+  font-family: "Lobster";
+  color: #1E3A8A;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+/* Entree Container Styling */
+.entree-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+/* Styling for all of the menu item containers */
+.fettuccine-section, .penne-section, .tea-section, 
+.strawberry-section, .lava-section, .cupcake-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  margin: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  text-wrap: wrap;
+}
+
+.fettuccine-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the menu section headings */
+.entree-heading, .beverages-heading, .dessert-heading {
+  color: #1E3A8A;
+  font-family: "Lato";
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+/* Styling for the menu item headings */
+.fettuccine-heading, .penne-heading, .strawberry-heading,
+.tea-heading, .lava-heading, .cupcake-heading {
+  font-family: "Open Sans";
+  font-size: 1rem;
+} 
+
+/* Styling to align the heading and price of menu items */
+.fettuccine-item, .penne-item, .strawberry-item, .tea-item,
+.lava-item, .cupcake-item {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: fit-content;
+  width: 500px;
+  margin-top: 0;
+}
+
+.fettuccine-price, .penne-price, .strawberry-price,
+.tea-price, .lava-price, .cupcake-price {
+  font-family: "Lato";
+  font-size: 1rem;
+  color: #555555;
+  text-align: right;
+}
+
+.fettuccine-photo {
+  align-items: center;
+  width: 350px;
+  height: auto;
+}
+
+.fettuccine-description {
+
+}
+
+/* Styling for the Penne section */
+
+
+.penne-price {
+
+}
+
+.penne-description {
+
+}
+
+/* Beverage Container Styling */
+.beverages-container {
+  height: fit-content;   
+}
+
+/* Strawberry Lemonade styling */
+.strawberry-article {
+
+}
+
+.strawberry-heading {
+
+}
+
+.strawberry-price {
+
+}
+
+.strawberry-description {
+
+}
+
+/* Iced Tea styling */
+.tea-article {
+
+}
+
+.tea-heading {
+
+}
+
+.tea-price {
+
+}
+
+.tea-description {
+
+}
+
+/* Dessert Container Styling */
+.dessert-container {
+  height: fit-content;
+}
+
+/* Lava Cake styling */
+.lava-article {
+
+}
+
+.lave-heading {
+
+}
+
+.lava-price {
+
+}
+
+.lava-description {
+
+}
+
+/* Cupcake Styling */
+.cupcake-article {
+
+}
+
+.cupcake-heading {
+
+}
+
+.cupcake-price {
+
+}
+
+.cupcake-description {
+
+}

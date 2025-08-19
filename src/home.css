@@ -2,18 +2,18 @@
 @font-face {
   font-family: "Open Sans";
   src: url("./fonts/static/OpenSans-Bold.ttf") format("truetype");
-};
+}
 
 @font-face {
   font-family: "Lato";
   src: url("./fonts/Lato-Black.ttf") format("truetype");
-};
+}
 
 @font-face {
   font-family: "Lobster";
   src: url("./fonts/Lobster_Two/LobsterTwo-BoldItalic.ttf") format("truetype");
   font-display: swap;
-};
+}
 
 * {
   margin: 0;
@@ -36,13 +36,16 @@ html, body {
 }
 
 .home-heading-main {
+  text-align: center;
   font-family: "Lobster", sans-serif;
   font-size: 3.5rem;
   margin-top: 1rem;
+  margin-right: 1.8rem;
   margin-bottom: 1.25rem;
 }
 
 .home-heading-sub {
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
@@ -106,6 +109,7 @@ html, body {
 .nav-menu {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   padding: 12px;
   border-top: none;
@@ -148,15 +152,6 @@ div {
   flex-direction: column;
   margin: 10px;
   padding: 5px;
-}
-
-h1, h2 { 
-  text-align: center;
-  font-size: 15px;
-}
-
-h2 { 
-  margin-top: 10px;
 }
 
 strong { 
